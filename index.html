@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrera de Fórmula 1</title>
+    <link rel="stylesheet" type="text/css" href= "css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.1/build/global/luxon.min.js"></script>
+</head>
+<body>
+  <h1>Carrera de Fórmula 1</h1>
+  <label for="velocidadHamilton">Velocidad de Hamilton (entre 100 y 300):</label>
+  <input type="number" id="velocidadHamilton" min="100" max="300">
+  
+  <label for="velocidadVerstappen">Velocidad de Verstappen (entre 100 y 300):</label>
+  <input type="number" id="velocidadVerstappen" min="100" max="300">
+  
+  <button id="iniciarVuelta">Iniciar Vuelta</button>
+  <button id="reiniciarCarrera" class="btn btn-secondary">Reiniciar Carrera</button>
+  <div id="resultadosCarrera"></div>
+
+ 
+
+  <img id="imgHamilton" src="img/ham.jpeg" alt="Hamilton" style="display: none; width: 500px; height: 500px;" >
+<img id="imgVerstappen" src="img/vers.jpeg" alt="Verstappen" style="display: none; width: 500px; height: 500px;">
+<img id="imgEmpate" src="img/maxham.jpeg" alt="Empate" style="display: none; width: 500px; height: 500px;">
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
