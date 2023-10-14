@@ -2,7 +2,7 @@
     const MIN_POTENCIA = 100;
     const MAX_POTENCIA = 300;
     const MAX_VUELTAS = 5;
-    const API_URL = 'ruta/al/archivo/datos.json'; // Reemplaza esto con la ruta correcta a tu archivo JSON
+    const API_URL = 'datos.json';
 
     let hamilton = {
         nombre: "Hamilton",
@@ -18,7 +18,7 @@
 
     let vueltaActual = 0;
 
-    // Agregar solicitud fetch para cargar datos al inicio
+ 
     fetch(API_URL)
         .then(response => response.json())
         .then(data => {
@@ -72,10 +72,9 @@
 
         vueltaActual++;
 
-        const now = luxon.DateTime.local(); // Obtener la hora actual con Luxon
-        const horaVuelta = now.toFormat("HH:mm:ss"); // Formatear la hora
-        const dt = DateTime.now ();
-        dt.year
+        const now = luxon.DateTime.local();
+        const horaVuelta = now.toFormat("HH:mm:ss"); 
+       
 
         hamilton.historialVelocidad.push({
             potencia: potencias.potenciaHamilton,
